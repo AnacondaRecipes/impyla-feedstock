@@ -39,7 +39,12 @@ test:
 about:
   home: https://github.com/cloudera/impyla
   license: Apache 2.0
+  license_family: Apache
   summary: 'Python client for the Impala distributed query engine'
+  description: |
+    Python DB API 2.0 client for Impala and Hive (HiveServer2 protocol)
+  doc_url: https://pypi.python.org/pypi/impyla
+  doc_source_url: https://github.com/cloudera/impyla/blob/master/README.md
 
 extra:
   recipe-maintainers:
