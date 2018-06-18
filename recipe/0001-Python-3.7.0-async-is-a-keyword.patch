@@ -1,0 +1,26 @@
+diff -urN impyla-0.14.1.orig/impala/hiveserver2.py impyla-0.14.1/impala/hiveserver2.py
+--- impyla-0.14.1.orig/impala/hiveserver2.py	2018-06-18 14:00:09.949119075 +0000
++++ impyla-0.14.1/impala/hiveserver2.py	2018-06-18 14:01:10.356310782 +0000
+@@ -337,7 +337,7 @@
+ 
+             op = self.session.execute(self._last_operation_string,
+                                       configuration,
+-                                      async=True)
++                                      _async=True)
+             self._last_operation = op
+ 
+         self._execute_async(op)
+@@ -1019,11 +1019,11 @@
+         req = TCloseSessionReq(sessionHandle=self.handle)
+         self._rpc('CloseSession', req)
+ 
+-    def execute(self, statement, configuration=None, async=False):
++    def execute(self, statement, configuration=None, _async=False):
+         req = TExecuteStatementReq(sessionHandle=self.handle,
+                                    statement=statement,
+                                    confOverlay=configuration,
+-                                   runAsync=async)
++                                   runAsync=_async)
+         return self._operation('ExecuteStatement', req)
+ 
+     def get_databases(self, schema='.*'):

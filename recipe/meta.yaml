@@ -8,9 +8,11 @@ source:
   fn: impyla-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/i/impyla/impyla-{{ version }}.tar.gz
   md5: 4d9383ede4b0c36850fbec662c171bce
+  patches:
+    - 0001-Python-3.7.0-async-is-a-keyword.patch
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -35,6 +37,7 @@ test:
     - impala
     - impala.tests
     - impala.thrift
+    - impala.hiveserver2
 
 about:
   home: https://github.com/cloudera/impyla
