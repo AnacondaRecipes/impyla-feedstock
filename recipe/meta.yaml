@@ -1,4 +1,4 @@
-{% set version = "0.16.3" %}
+{% set version = "0.17.0" %}
 
 package:
   name: impyla
@@ -7,7 +7,7 @@ package:
 source:
   fn: impyla-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/i/impyla/impyla-{{ version }}.tar.gz
-  md5: 6202a37a16a98473b1c9ec9bbb9a4349
+  md5: 1f943486e382c5adbf9b3858cd5b4abd
 
 build:
   number: 0
