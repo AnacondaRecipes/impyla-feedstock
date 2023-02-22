@@ -17,10 +17,10 @@ requirements:
   host:
     - python
     - setuptools
-    - six
-    - bitarray
     - pip
     - wheel
+    - six 1.15.0
+    - bitarray 2.3.5
     - thrift  # [py2k]
     - thriftpy2 0.4.16
 
