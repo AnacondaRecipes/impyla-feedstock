@@ -19,7 +19,8 @@ requirements:
     - setuptools
     - pip
     - wheel
-    - six 1.16.0
+    - six 1.16.0  # [not s390x]
+    - six 1.15.0  # [s390x]
     - bitarray 2.5.0
     - thrift  # [py2k]
     - thriftpy2 0.4
