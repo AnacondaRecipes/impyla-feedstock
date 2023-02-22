@@ -20,14 +20,14 @@ requirements:
     - six
     - bitarray
     - thrift  # [py2k]
-    - thriftpy >=0.3.5
+    - thriftpy2 0.4.16
 
   run:
     - python
     - setuptools
     - six
     - bitarray
-    - thriftpy >=0.3.5
+    - thriftpy2 >=0.3.5
     - thrift  # [py2k]
 
 test:
