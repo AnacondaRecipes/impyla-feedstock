@@ -32,6 +32,10 @@ requirements:
     - thrift  # [py2k]
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - impala
     - impala.tests
