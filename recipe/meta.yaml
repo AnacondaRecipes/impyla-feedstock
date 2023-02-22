@@ -26,7 +26,6 @@ requirements:
 
   run:
     - python
-    - setuptools
     - six
     - bitarray
     - thriftpy2 >=0.3.5
