@@ -19,6 +19,8 @@ requirements:
     - setuptools
     - six
     - bitarray
+    - pip
+    - wheel
     - thrift  # [py2k]
     - thriftpy2 0.4.16
 
