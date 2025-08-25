@@ -46,7 +46,7 @@ about:
   summary: Python client for the Impala distributed query engine
   description: |
     Python DB API 2.0 client for Impala and Hive (HiveServer2 protocol)
-  doc_url: https://pypi.org/project/impyla/
+  doc_url: https://pypi.org/project/impyla
   dev_url: https://github.com/cloudera/impyla
 
 extra:
