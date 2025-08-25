@@ -1,11 +1,12 @@
+{% set name = "impyla" %}
 {% set version = "0.22.0" %}
 
 package:
-  name: impyla
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/i/impyla/impyla-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 19def919ef8295a622fdf2f6d04fe1e5954c4d932a397fbde26a89c6c29ef33d
 
 build:
@@ -33,6 +34,7 @@ test:
     - pip
   commands:
     - pip check
+    - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
   imports:
     - impala
     - impala.tests
