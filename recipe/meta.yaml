@@ -5,7 +5,6 @@ package:
   version: {{ version }}
 
 source:
-  fn: impyla-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/i/impyla/impyla-{{ version }}.tar.gz
   sha256: 19def919ef8295a622fdf2f6d04fe1e5954c4d932a397fbde26a89c6c29ef33d
 
